@@ -64,7 +64,7 @@
         padding: 20px 40px 20px 40px;
       }
 
-      .red-box {
+      .red-box1 {
         background-color: crimson;
         color: #fff;
         padding: 1.5em;
@@ -116,7 +116,7 @@
       .penguin-top {
         top: 10%;
         left: 25%;
-        background: var(--pengiun-skin,black);
+        background: var(--pengiun-skin, black);
         width: 50%;
         height: 45%;
         border-radius: 70% 70% 60% 60%;
@@ -125,7 +125,7 @@
       .penguin-bottom {
         top: 40%;
         left: 23.5%;
-        background: var(--pengiun-skin,black);
+        background: var(--pengiun-skin, black);
         width: 53%;
         height: 45%;
         border-radius: 70% 70% 100% 100%;
@@ -274,6 +274,15 @@
       .penguin * {
         position: absolute;
       }
+      :root {
+        --red-color: red;
+      }
+      .red-box {
+        background: red;
+        background: var(--red-color);
+        height: 200px;
+        width: 200px;
+      }
     </style>
   </head>
   <body>
@@ -329,7 +338,7 @@
       <h5 class="injected-text">margin</h5>
 
       <div class="box yellow-box">
-        <h5 class="box red-box">padding</h5>
+        <h5 class="box red-box1">padding</h5>
         <h5 class="box blue-box">padding</h5>
       </div>
       <h1 class="red-text">I am red!</h1>
@@ -378,6 +387,7 @@
           <div class="beak-bottom"></div>
         </div>
       </div>
+      <div class="red-box"></div>
     </main>
   </body>
 </html>
